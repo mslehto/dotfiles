@@ -1,0 +1,118 @@
+<openbox_menu>
+	<menu id="root-menu" label="labeli">
+		<item label="xterm">
+			<action name="Execute">
+				<command>/usr/local/bin/xterm -u8 +sb -bc -fg green -bg black</command>
+			</action>
+  		</item>
+
+		<item label="setxkbmap us">
+			<action name="Execute">
+				<command>setxkbmap us</command>
+			</action>
+  		</item>
+		<item label="setxkbmap fi">
+			<action name="Execute">
+				<command>setxkbmap fi</command>
+			</action>
+  		</item>
+		<item label="gvim">
+			<action name="Execute">
+				<command>/usr/local/bin/gvim</command>
+			</action>
+  		</item>
+		<separator/>
+		<item label="Chrome">
+			<action name="Execute">
+				<command>chrome</command>
+			</action>
+  		</item>
+		<item label="Firefox">
+			<action name="Execute">
+				<command>firefox</command>
+			</action>
+  		</item>
+		<item label="pc-mixer">
+			<action name="Execute">
+				<command>/usr/local/bin/pc-mixer</command>
+			</action>
+  		</item>
+		<item label="gmtp">
+			<action name="Execute">
+				<command>/usr/local/bin/gmtp</command>
+			</action>
+  		</item>
+		<item label="Thunderbird">
+			<action name="Execute">
+				<command>thunderbird</command>
+			</action>
+  		</item>
+		<separator/>
+		<item label="PC-BSD handbook">
+			<action name="Execute">
+				<command>/usr/local/share/pcbsd/scripts/openhandbook.sh</command>
+			</action>
+  		</item>
+		<item label="PC-BSD appcafe">
+			<action name="Execute">
+				<command>appcafe</command>
+			</action>
+  		</item>
+		<item label="PC-BSD control panel">
+			<action name="Execute">
+				<command>pc-controlpanel</command>
+			</action>
+  		</item>
+		<item label="PC-BSD CUPS config">
+			<action name="Execute">
+				<command>
+qsudo pc-cupscfg
+				</command>
+			</action>
+  		</item>
+		<item label="PC-BSD sound config">
+			<action name="Execute">
+				<command>
+qsudo pc-soundconfig
+				</command>
+			</action>
+  		</item>
+		<item label="PC-BSD disk manager">
+			<action name="Execute">
+				<command>
+qsudo pc-zmanager
+				</command>
+			</action>
+  		</item>
+		<item label="PC-BSD disk mixer">
+			<action name="Execute">
+				<command>
+pc-mixer
+				</command>
+			</action>
+  		</item>
+		<separator/>
+
+		<item label="obconf">
+			<action name="Execute">
+				<command>obconf</command>
+			</action>
+  		</item>
+
+		<item label="Reconfigure Openbox">
+			<action name="Reconfigure"/>
+  		</item>
+
+		<item label="Exit">
+			<action name="Exit">
+				<prompt>yes</prompt>
+			</action>
+  		</item>
+		<separator/>
+		<item label="Screensaver">
+			<action name="Execute">
+				<command>/usr/local/bin/xscreensaver-command -l</command>
+			</action>
+  		</item>
+	</menu>
+<openbox_menu>	
