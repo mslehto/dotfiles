@@ -34,7 +34,7 @@ xsetroot -solid grey &
 xmodmap -e 'pointer = 3 2 1'
 
 SSHAGENTRC="$(ssh-agent -s)"
-echo ${SSHAGENTRC} > ~/sa.sh
+echo ${SSHAGENTRC} > ~/.ssh-agent.sh
 eval ${SSHAGENTRC}
 
 # set ENV to a file invoked each time sh is started for interactive use
