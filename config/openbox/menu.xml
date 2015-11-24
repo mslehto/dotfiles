@@ -2,7 +2,7 @@
 	<menu id="root-menu" label="labeli">
 		<item label="xterm">
 			<action name="Execute">
-				<command>/usr/local/bin/xterm -u8 +sb -bc -fg green -bg black</command>
+				<command>/usr/local/bin/xterm</command>
 			</action>
   		</item>
 
