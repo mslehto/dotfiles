@@ -5,5 +5,6 @@
 [alias]
 	logd = log --decorate
 	logg = log --decorate --graph --all
+	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
 [push]
 	default = simple
