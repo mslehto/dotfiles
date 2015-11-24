@@ -24,3 +24,18 @@ for file in ${FILES};do
 		fi
 	fi
 done
+
+
+OPENBOXCONF=$(expr ~/.config/openbox)
+if [ -d ${OPENBOXCONF} ];then
+	for file in rc.xml menu.xml
+	do
+		f=$(expr ${OPENBOXCONF}/${file})
+	if [ -f ${f} ];then
+		echo "skipping ${f} - already exists"
+	fi
+	done
+else
+	echo "${OPENBOXCONF} does not exist"
+	echo "maybe mkdir -p ${OPENBOXCONF} ?"
+fi
