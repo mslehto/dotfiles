@@ -1,5 +1,5 @@
 XTerm*deleteIsDEL:		false
 XTerm*background:		black
 XTerm*foreground:		green
-XTerm*highlightColor:	grey
+XTerm*highlightColor:	blue
 XTerm*scrollBar:		false
