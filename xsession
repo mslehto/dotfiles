@@ -46,11 +46,16 @@ fi
 
 
 if [ "${HOST}" = 'spof' ];then
+	xscreensaver &
+	xset b off
+	setxkbmap -layout us,fi -option grp:caps_toggle
 	(zpool list -v -Tu | xmessage -geometry +100+10 -file -) &
 	askXrandr
 fi
 
 if [ "${HOST}" = 'tempo' ];then
+	xscreensaver &
+	xset b off
 	(freebsd-version | xmessage -geometry +100+10 -file -) &
 fi
 
