@@ -1,5 +1,7 @@
 [user]
 	name = Mikko Lehto
+[color]
+        ui = true
 [alias]
 	logd = log --decorate
 	logg = log --decorate --graph --all
