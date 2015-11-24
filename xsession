@@ -30,7 +30,7 @@ askXrandr() {
 HOST=$(hostname -s)
 OS=$(uname -o)
 
-xsetroot -solid grey &
+xsetroot -solid black &
 xmodmap -e 'pointer = 3 2 1'
 
 SSHAGENTRC="$(ssh-agent -s)"
