@@ -21,6 +21,11 @@
 				<command>/usr/local/bin/gvim</command>
 			</action>
   		</item>
+		<item label="gucharmap">
+			<action name="Execute">
+				<command>/usr/local/bin/gucharmap</command>
+			</action>
+  		</item>
 		<separator/>
 		<item label="Chrome">
 			<action name="Execute">
@@ -107,8 +112,18 @@ pc-mixer
 			<action name="Exit">
 				<prompt>yes</prompt>
 			</action>
-  		</item>
+		</item>
 		<separator/>
+		<item label="gotta run">
+				<action name="Execute">
+				<command>xdg-open http://reittiopas.fi/</command>
+				<startupnotify>
+						<enabled>no</enabled>
+						<icon>cups</icon>
+				</startupnotify>
+				</action>
+		</item>
+
 		<item label="Screensaver">
 			<action name="Execute">
 				<command>/usr/local/bin/xscreensaver-command -l</command>
