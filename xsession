@@ -42,8 +42,8 @@ ENV=$HOME/.shrc; export ENV
 
 if [ "${OS}" = "FreeBSD" ]; then
 	(pkg audit | xmessage -geometry +100+200 -file -) &
+	xterm -hold -title 'pkg audit' -e pkg audit &
 fi
-
 
 if [ "${HOST}" = 'spof' ];then
 	xscreensaver -nosplash &
