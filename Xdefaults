@@ -17,3 +17,4 @@ XTerm*fullscreen:		false
 XTerm*saveLines:		8192
 XTerm*borderWidth:		2
 XTerm*internalBorder:   1
+XTerm*hold:				false
