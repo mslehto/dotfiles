@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FILES='tmux.conf vimrc xsession'
+FILES='tmux.conf vimrc xsession Xdefaults'
 DOTDIR=$(expr ~/dotfiles)
 
 if [ ! -d ${DOTDIR} ];then
