@@ -1,0 +1,7 @@
+[user]
+	name = Mikko Lehto
+[alias]
+	logd = log --decorate
+	logg = log --decorate --graph --all
+[push]
+	default = simple

@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FILES='tmux.conf vimrc xsession Xdefaults'
+FILES='tmux.conf vimrc xsession Xdefaults gitconfig'
 DOTDIR=$(expr ~/dotfiles)
 
 checkIfExist () {
