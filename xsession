@@ -1,6 +1,10 @@
 #!/bin/sh
 
 askXrandr() {
+		if [ ! -x "/usr/local/bin/cowsay" ];then
+			   return
+		fi
+
 		cowchars='b d g p s t w y'
 		len=${#cowchars}
 		count=$(expr $len / 2)
@@ -27,6 +31,14 @@ askXrandr() {
 		fi
 }
 
+show-zpool() {
+	(zpool list -v -Tu | xmessage -geometry +100+10 -file -) &
+}
+
+show-pkg_audit() {
+	xterm -hold -title 'pkg audit' -e pkg audit &
+}
+
 HOST=$(hostname -s)
 OS=$(uname -o)
 
@@ -41,25 +53,30 @@ eval ${SSHAGENTRC}
 ENV=$HOME/.shrc; export ENV
 
 if [ "${OS}" = "FreeBSD" ]; then
-	(pkg audit | xmessage -geometry +100+200 -file -) &
-	xterm -hold -title 'pkg audit' -e pkg audit &
+	show-pkg_audit
+	show-zpool
+	(freebsd-version | xmessage -geometry +100+10 -file - -timeout 600) &
 fi
 
 if [ "${HOST}" = 'spof' ];then
 	xscreensaver -nosplash &
+	~/dotfiles/bin/xclock.sh
 	xset b off
 	setxkbmap -layout us,fi -option grp:caps_toggle
-	(zpool list -v -Tu | xmessage -geometry +100+10 -file -) &
 	askXrandr
 fi
 
 if [ "${HOST}" = 'tempo' ];then
 	xscreensaver -nosplash &
+	~/dotfiles/bin/xclock.sh
 	xset b off
-	(freebsd-version | xmessage -geometry +100+10 -file -) &
 fi
 
-dotfiles/bin/xclock.sh
+if [ "${HOST}" = 'ljb' ];then
+	xscreensaver -nosplash &
+	xset b off
+fi
+
 
 openbox
 
