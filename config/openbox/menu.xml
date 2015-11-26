@@ -114,6 +114,17 @@ pc-mixer
 			</action>
 		</item>
 		<separator/>
+		<item label="xscreensaver-command -quit">
+			<action name="Execute">
+				<command>/usr/local/bin/xscreensaver-command -quit</command>
+			</action>
+		</item>
+		<item label="xscreensaver">
+			<action name="Execute">
+				<command>/usr/local/bin/xscreensaver</command>
+			</action>
+		</item>
+		<separator/>
 		<item label="gotta run">
 				<action name="Execute">
 				<command>xdg-open http://reittiopas.fi/</command>
@@ -124,10 +135,10 @@ pc-mixer
 				</action>
 		</item>
 
-		<item label="Screensaver">
+		<item label="xscreensaver-command -lock">
 			<action name="Execute">
 				<command>/usr/local/bin/xscreensaver-command -l</command>
 			</action>
-  		</item>
+		</item>
 	</menu>
 <openbox_menu>	
