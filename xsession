@@ -39,15 +39,15 @@ show-pkg_audit() {
 	xterm -hold -title 'pkg audit' -e pkg audit &
 }
 
+show-pceol() {
+	xterm -hold -title 'pc-updatemanager showeol' -e "pc-updatemanager showeol" &
+}
+
 HOST=$(hostname -s)
 OS=$(uname -o)
 
-xsetroot -solid black &
 xmodmap -e 'pointer = 3 2 1'
 
-SSHAGENTRC="$(ssh-agent -s)"
-echo ${SSHAGENTRC} > ~/.ssh-agent.sh
-eval ${SSHAGENTRC}
 
 # set ENV to a file invoked each time sh is started for interactive use
 ENV=$HOME/.shrc; export ENV
@@ -59,24 +59,39 @@ if [ "${OS}" = "FreeBSD" ]; then
 fi
 
 if [ "${HOST}" = 'spof' ];then
+	show-pceol
+	askXrandr
+	SSHAGENTRC="$(ssh-agent -c)"
+	xsetroot -solid gray &
 	xscreensaver -nosplash &
 	~/dotfiles/bin/xclock.sh
 	xset b off
 	setxkbmap -layout us,fi -option grp:caps_toggle
-	askXrandr
 fi
 
 if [ "${HOST}" = 'tempo' ];then
+	SSHAGENTRC="$(ssh-agent -s)"
+	xsetroot -solid black &
 	xscreensaver -nosplash &
 	~/dotfiles/bin/xclock.sh
 	xset b off
 fi
 
 if [ "${HOST}" = 'ljb' ];then
+	SSHAGENTRC="$(ssh-agent -c)"
+	show-pceol
+	xsetroot -solid gray &
 	xscreensaver -nosplash &
 	xset b off
 fi
 
+if [ "${HOST}" = 'tiptop' ];then
+	xsetroot -solid gray &
+	xscreensaver -nosplash &
+	xset b off
+fi
+echo ${SSHAGENTRC} > ~/.ssh-agent.sh
+eval ${SSHAGENTRC}
 
 openbox
 
