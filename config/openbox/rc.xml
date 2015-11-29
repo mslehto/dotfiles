@@ -159,6 +159,11 @@
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
   <keyboard>
+    <keybind key="W-F10">
+        <action name="ToggleDecorations"/>
+        <action name="ToggleMaximize">
+      </action>
+    </keybind>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
