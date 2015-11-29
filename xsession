@@ -89,6 +89,7 @@ if [ "${HOST}" = 'tiptop' ];then
 	xsetroot -solid gray &
 	xscreensaver -nosplash &
 	xset b off
+	~/dotfiles/bin/xclock.sh
 fi
 echo ${SSHAGENTRC} > ~/.ssh-agent.sh
 eval ${SSHAGENTRC}
