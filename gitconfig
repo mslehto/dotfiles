@@ -3,6 +3,7 @@
 [color]
 	ui = true
 [alias]
+	co = checkout
 	logd = log --decorate
 	logg = log --decorate --graph --all
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
