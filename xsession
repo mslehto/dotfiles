@@ -44,7 +44,7 @@ show-pceol() {
 }
 
 HOST=$(hostname -s)
-OS=$(uname -o)
+OS=$(uname -s)
 
 xmodmap -e 'pointer = 3 2 1'
 
