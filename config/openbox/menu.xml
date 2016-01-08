@@ -51,7 +51,12 @@
 			<action name="Execute">
 				<command>/usr/local/bin/gmtp</command>
 			</action>
-  		</item>
+		</item>
+		<item label="psi">
+			<action name="Execute">
+				<command>psi</command>
+			</action>
+		</item>
 		<item label="Thunderbird">
 			<action name="Execute">
 				<command>thunderbird</command>
