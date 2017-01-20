@@ -83,6 +83,8 @@ if [ "${HOST}" = 'ljb' ];then
 	xsetroot -solid gray &
 	xscreensaver -nosplash &
 	xset b off
+	xfce4-panel &
+	setxkbmap fi
 fi
 
 if [ "${HOST}" = 'tiptop' ];then
