@@ -38,7 +38,7 @@
   </placement>
   <theme>
     <name>Clearlooks</name>
-    <titleLayout>NIMLD</titleLayout>
+    <titleLayout>NIMSDL</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
       N: window icon
@@ -100,13 +100,18 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>4</number>
+    <number>9</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>üksi</name>
-      <name>this is unix i know this</name>
-      <name>tas</name>
+      <name>vika</name>
+      <name>develol</name>
+      <name>doc</name>
       <name>troot</name>
+      <name>UNI</name>
+      <name>NNI</name>
+      <name>IP</name>
+      <name>jotain</name>
     </names>
     <popupTime>1875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
@@ -158,8 +163,8 @@
   </dock>
   <keyboard>
     <keybind key="W-F10">
-        <action name="ToggleDecorations"/>
-        <action name="ToggleMaximize">
+      <action name="ToggleDecorations"/>
+      <action name="ToggleMaximize">
       </action>
     </keybind>
     <chainQuitKey>C-g</chainQuitKey>
@@ -256,19 +261,19 @@
       </action>
     </keybind>
     <keybind key="C-Tab">
-        <action name="ShowMenu">
-          <menu>root-menu</menu>
-        </action>
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
     </keybind>
     <keybind key="Menu">
-        <action name="ShowMenu">
-          <menu>root-menu</menu>
-        </action>
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
     </keybind>
     <keybind key="Super_L">
-        <action name="ShowMenu">
-          <menu>root-menu</menu>
-        </action>
+      <action name="ShowMenu">
+        <menu>root-menu</menu>
+      </action>
     </keybind>
     <keybind key="A-Tab">
       <action name="NextWindow">
@@ -691,43 +696,35 @@
     <!-- show the manage desktops section in the client-list-(combined-)menu -->
   </menu>
   <applications>
-
-		<!-- PGW CDR viewer -->
-		<application
-				  name="progress"
-				  title="Stage 1 searching..."
-				  type="dialog"> 
-			<focus>no</focus>
-			<layer>below</layer> <!-- above normal below -->
-			<position force="yes">
-					<x>0</x> <y>0</y>
-					<monitor>mouse</monitor>
-			</position>
-			<size>
-				<width>3/2</width>
-			</size>
-		</application>
-		<application
-				name="progress"
-				title="Stage 2 searching..."
-				type="dialog">
-			<focus>no</focus>
-		</application>
-
-		<application
-				name="xclock">
-			<focus>no</focus>
-			<position force="yes">
-				<x>-1</x> <y>0</y>
-			</position>
-			<desktop>all</desktop>
-			<decor>no</decor>
-			<shade>no</shade>
-			<layer>above</layer>
-			<skip_taskbar>yes</skip_taskbar>
-			<skip_pager>yes</skip_pager>
-		</application>
-
+    <application name="progress" title="Stage 1 searching..." type="dialog">
+      <focus>no</focus>
+      <layer>below</layer>
+      <!-- above normal below -->
+      <position force="yes">
+        <x>0</x>
+        <y>0</y>
+        <monitor>mouse</monitor>
+      </position>
+      <size>
+        <width>3/2</width>
+      </size>
+    </application>
+    <application name="progress" title="Stage 2 searching..." type="dialog">
+      <focus>no</focus>
+    </application>
+    <application name="xclock">
+      <focus>no</focus>
+      <position force="no">
+        <x>1280</x>
+        <y>900</y>
+      </position>
+      <desktop>all</desktop>
+      <decor>no</decor>
+      <shade>no</shade>
+      <layer>above</layer>
+      <skip_taskbar>yes</skip_taskbar>
+      <skip_pager>yes</skip_pager>
+    </application>
     <!--
     <decor>no</decor>
   # this is an example with comments through out. use these to make your

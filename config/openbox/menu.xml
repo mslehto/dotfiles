@@ -5,6 +5,7 @@
 				<command>~/dotfiles/bin/xterm.sh</command>
 			</action>
   		</item>
+
 		<item label="xterm">
 			<action name="Execute">
 				<command>xterm</command>
@@ -21,6 +22,13 @@
 				<command>setxkbmap fi</command>
 			</action>
   		</item>
+
+		<item label="muttprint.ps">
+			<action name="Execute">
+				<command>~/bin/muttprint-evince.sh</command>
+			</action>
+		</item>
+
 		<item label="gvim">
 			<action name="Execute">
 				<command>/usr/local/bin/gvim</command>
@@ -32,37 +40,44 @@
 			</action>
   		</item>
 		<separator/>
-		<item label="Chrome">
-			<action name="Execute">
-				<command>chrome</command>
-			</action>
-  		</item>
-		<item label="Firefox">
+		<item label="ff">
 			<action name="Execute">
 				<command>firefox</command>
 			</action>
   		</item>
+
+		<item label="tb">
+			<action name="Execute">
+				<command>thunderbird</command>
+			</action>
+  		</item>
+
 		<item label="pc-mixer">
 			<action name="Execute">
 				<command>/usr/local/bin/pc-mixer</command>
 			</action>
   		</item>
+
 		<item label="gmtp">
 			<action name="Execute">
 				<command>/usr/local/bin/gmtp</command>
 			</action>
 		</item>
+
 		<item label="psi">
 			<action name="Execute">
 				<command>psi</command>
 			</action>
 		</item>
-		<item label="Thunderbird">
+
+		<item label="tb">
 			<action name="Execute">
 				<command>thunderbird</command>
 			</action>
   		</item>
+
 		<separator/>
+
 		<item label="PC-BSD handbook">
 			<action name="Execute">
 				<command>/usr/local/share/pcbsd/scripts/openhandbook.sh</command>
@@ -108,6 +123,12 @@ pc-mixer
   		</item>
 		<separator/>
 
+		<item label="radmin">
+			<action name="Execute">
+				<command>~/bin/radmin</command>
+			</action>
+		</item>
+
 		<item label="obconf">
 			<action name="Execute">
 				<command>obconf</command>
@@ -143,6 +164,20 @@ pc-mixer
 						<icon>cups</icon>
 				</startupnotify>
 				</action>
+		</item>
+
+		<item label="shutdown -r now">
+			<action name="Execute">
+				<prompt/>
+				<command>/usr/local/bin/doas /sbin/shutdown -r now</command>
+			</action>
+		</item>
+
+		<item label="shutdown -p now">
+			<action name="Execute">
+				<prompt/>
+				<command>/usr/local/bin/doas /sbin/shutdown -p now</command>
+			</action>
 		</item>
 
 		<item label="xscreensaver-command -lock">
