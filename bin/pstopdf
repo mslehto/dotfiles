@@ -1,2 +1,3 @@
 #!/bin/sh
-gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -sOutputFile=yksi.pdf monta.eps
+echo "outputpdf=$1 inputps=$2..$3..$4"
+echo gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER -sOutputFile=$*
