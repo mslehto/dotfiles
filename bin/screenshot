@@ -1,0 +1,15 @@
+#!/bin/sh
+
+DATE="$(date +%Y-%m-%d_%H%M%S)"
+FILENAME=~/${DATE}_screenshot.png
+LINK=~/latest_screenshot.png
+xwd | xwdtopnm | pnmtopng > $FILENAME
+if [ $? -eq 0 ]
+then
+	printf "$FILENAME -> $LINK\n"
+	#if [ -h "${LINK}" ]
+	#then
+	rm $LINK
+	#fi
+	ln -s $FILENAME $LINK
+fi
