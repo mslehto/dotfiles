@@ -77,3 +77,9 @@ else
 	done
 
 fi
+
+printf "ln -s ~/dev/vim-fugitive/plugin/fugitive.vim vim/plugin/\n"
+printf "ln -s ~/dev/kamailio/github.com/kamailio/vim-kamailio-syntax/syntax/kamailio.vim vim/syntax/kamailio.vim\n"
+printf "ln -s ~/dev/kamailio/github.com/kamailio/vim-kamailio-syntax/ftdetect/kamailio.vim vim/ftdetect/kamailio.vim\n"
+printf "cp ~/dev/kamailio/github.com/kamailio/vim-kamailio-autocomplete/plugin/* vim/plugin/kamailio.vim/\n"
+
