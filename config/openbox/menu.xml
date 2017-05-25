@@ -134,6 +134,12 @@ pc-mixer
 			</action>
 		</item>
 
+		<item label="screenshot">
+			<action name="Execute">
+				<command>~/bin/screenshot</command>
+			</action>
+		</item>
+
 		<item label="obconf">
 			<action name="Execute">
 				<command>obconf</command>
