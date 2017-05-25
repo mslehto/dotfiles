@@ -40,6 +40,11 @@
 			</action>
   		</item>
 		<separator/>
+		<item label="piirustus">
+			<action name="Execute">
+				<command>tuxpaint</command>
+			</action>
+		</item>
 		<item label="ff">
 			<action name="Execute">
 				<command>firefox</command>
