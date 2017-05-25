@@ -12,3 +12,19 @@ imap <C-K> <c-o>:pyf /usr/local/llvm39/share/clang/clang-format.py<cr>
 nnoremap <F4> :make!<cr>
 set makeprg=gmake
 
+if has('gui_running')
+	set list listchars=tab:>-,nbsp:.,trail:.,extends:>,precedes:<,eol:\|
+	let &showbreak = '^'
+else
+	set showbreak=+++
+	set list listchars=tab:▸\ ,nbsp:∙,trail:∙,extends:▶,precedes:◀,eol:¬
+	"let &showbreak='↳'
+	"set showbreak='↳'
+	"set showbreak='¬'
+	"set showbreak='↵'
+	"set showbreak='␤'
+	"set showbreak='↲'
+	"set list listchars=tab:▸\ ,nbsp:∙,trail:∙,extends:▶,precedes:◀,eol:↳
+	"set list listchars=tab:▸\ ,nbsp:∙,trail:∙,extends:▶,precedes:◀,eol:¬
+endif
+
