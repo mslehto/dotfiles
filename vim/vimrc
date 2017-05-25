@@ -25,6 +25,13 @@ else
 	"set showbreak='␤'
 	"set showbreak='↲'
 	"set list listchars=tab:▸\ ,nbsp:∙,trail:∙,extends:▶,precedes:◀,eol:↳
-	"set list listchars=tab:▸\ ,nbsp:∙,trail:∙,extends:▶,precedes:◀,eol:¬
+	"set list listchars=tab:▸\ ,nbsp:∙,trail:∙,eXtends:▶,precedes:◀,eol:¬
+
+	"highlight NonText ctermfg=White
+	"highlight SpecialKey ctermfg=White
+	highlight SpecialKey ctermfg=Magenta
+	highlight NonText ctermfg=Magenta
+	highlight Visual ctermfg=Magenta
 endif
 
+set nolist
