@@ -7,6 +7,7 @@
 	logd = log --decorate
 	logg = log --decorate --graph --all
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
+	logf = log -p -M --follow --stat --
 	difs = diff --staged
 [push]
 	default = simple
