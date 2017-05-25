@@ -69,12 +69,13 @@ if [ "${HOST}" = 'spof' ];then
 	setxkbmap -layout us,fi -option grp:caps_toggle
 fi
 
-if [ "${HOST}" = 'tempo' ];then
+if [ "${HOST}" = 'tempof' ];then
 	SSHAGENTRC="$(ssh-agent -s)"
 	xsetroot -solid black &
 	xscreensaver -nosplash &
 	~/dotfiles/bin/xclock.sh
 	xset b off
+	setxkbmap -layout fi
 fi
 
 if [ "${HOST}" = 'ljb' ];then
