@@ -223,12 +223,6 @@
 	</keybind>
 
 	<keybind key="W-w">
-		<keybind key="h"><action name="MoveToEdgeWest"/></keybind>
-		<keybind key="l"><action name="MoveToEdgeEast"/></keybind>
-		<keybind key="j"><action name="MoveToEdgeSouth"/></keybind>
-		<keybind key="k"><action name="MoveToEdgeNorth"/></keybind>
-		<keybind key="equal"><action name="MoveToCenter"/></keybind>
-
 		<keybind key="1"><action name="SendToDesktop"><desktop>1</desktop><follow>no</follow></action></keybind>
 		<keybind key="2"><action name="SendToDesktop"><desktop>2</desktop><follow>no</follow></action></keybind>
 		<keybind key="3"><action name="SendToDesktop"><desktop>3</desktop><follow>no</follow></action></keybind>
@@ -269,7 +263,7 @@
 		</keybind>
 		<keybind key="o">
 			<action name="GoToDesktop">
-			<to>lsst</to>
+			<to>last</to>
 			</action>
 		</keybind>
 	</keybind>
