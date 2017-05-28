@@ -9,5 +9,6 @@
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	logf = log -p -M --follow --stat --
 	difs = diff --staged
+	stat = status -bs
 [push]
 	default = simple
