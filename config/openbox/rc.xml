@@ -241,6 +241,39 @@
 		<keybind key="o"><action name="ToggleOmnipresent"/></keybind>
 	</keybind>
 
+	<keybind key="A-S-h">
+		<action name="MoveToEdge"><direction>west</direction></action>
+	</keybind>
+	<keybind key="A-S-l">
+		<action name="MoveToEdge"><direction>east</direction></action>
+	</keybind>
+	<keybind key="A-S-k">
+		<action name="MoveToEdge"><direction>north</direction></action>
+	</keybind>
+	<keybind key="A-S-j">
+		<action name="MoveToEdge"><direction>south</direction></action>
+	</keybind>
+
+	<keybind key="A-w">
+		<keybind key="l">
+			<action name="GoToDesktop">
+			<to>east</to>
+			<wrap>yes</wrap>
+			</action>
+		</keybind>
+		<keybind key="h">
+			<action name="GoToDesktop">
+			<to>west</to>
+			<wrap>yes</wrap>
+			</action>
+		</keybind>
+		<keybind key="o">
+			<action name="GoToDesktop">
+			<to>lsst</to>
+			</action>
+		</keybind>
+	</keybind>
+
     <keybind key="W-F10">
       <action name="ToggleDecorations"/>
       <action name="ToggleMaximize">
