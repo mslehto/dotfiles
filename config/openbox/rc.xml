@@ -162,6 +162,67 @@
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
   <keyboard>
+
+	<keybind key="W-S-h">
+		<action name="UnmaximizeFull"/>
+		<action name="MoveResizeTo">
+			<x>0</x>
+			<y>0</y>
+			<height>100%</height>
+			<width>50%</width>
+		</action>
+	</keybind>
+
+	<keybind key="W-S-0x2f"> <!-- keycode 47==0x2f==Ö(fi) ;(en) -->
+		<action name="UnmaximizeFull"/>
+		<action name="MoveResizeTo">
+			<x>-1</x>
+			<y>0</y>
+			<height>100%</height>
+			<width>50%</width>
+		</action>
+	</keybind>
+	<keybind key="W-S-k">
+		<action name="UnmaximizeFull"/>
+		<action name="MoveResizeTo">
+			<x>0</x>
+			<y>0</y>
+			<height>50%</height>
+			<width>100%</width>
+		</action>
+	</keybind>
+	<keybind key="W-S-j">
+		<action name="UnmaximizeFull"/>
+		<action name="MoveResizeTo">
+			<x></x>
+			<y>-1</y>
+			<height>50%</height>
+			<width>100%</width>
+		</action>
+	</keybind>
+
+	<keybind key="W-S-A-h">
+		<action name="ResizeRelative">
+			<right>-5</right>
+		</action>
+	</keybind>
+	<keybind key="W-S-A-0x2f"> <!-- keycode 47==0x2f==Ö(fi) ;(en) -->
+		<action name="ResizeRelative">
+			<left>-5</left>
+		</action>
+	</keybind>
+	<keybind key="W-S-A-k">
+		<action name="ResizeRelative">
+			<bottom>-5</bottom>
+		</action>
+	</keybind>
+	<keybind key="W-S-A-j">
+		<action name="ResizeRelative">
+			<top>-5</top>
+		</action>
+	</keybind>
+
+
     <keybind key="W-F10">
       <action name="ToggleDecorations"/>
       <action name="ToggleMaximize">
@@ -266,11 +327,6 @@
       </action>
     </keybind>
     <keybind key="Menu">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
-      </action>
-    </keybind>
-    <keybind key="Super_L">
       <action name="ShowMenu">
         <menu>root-menu</menu>
       </action>
