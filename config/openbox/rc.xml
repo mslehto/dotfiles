@@ -222,6 +222,25 @@
 		</action>
 	</keybind>
 
+	<keybind key="W-w">
+		<keybind key="h"><action name="MoveToEdgeWest"/></keybind>
+		<keybind key="l"><action name="MoveToEdgeEast"/></keybind>
+		<keybind key="j"><action name="MoveToEdgeSouth"/></keybind>
+		<keybind key="k"><action name="MoveToEdgeNorth"/></keybind>
+		<keybind key="equal"><action name="MoveToCenter"/></keybind>
+
+		<keybind key="1"><action name="SendToDesktop"><desktop>1</desktop><follow>no</follow></action></keybind>
+		<keybind key="2"><action name="SendToDesktop"><desktop>2</desktop><follow>no</follow></action></keybind>
+		<keybind key="3"><action name="SendToDesktop"><desktop>3</desktop><follow>no</follow></action></keybind>
+		<keybind key="4"><action name="SendToDesktop"><desktop>4</desktop><follow>no</follow></action></keybind>
+		<keybind key="5"><action name="SendToDesktop"><desktop>5</desktop><follow>no</follow></action></keybind>
+		<keybind key="6"><action name="SendToDesktop"><desktop>6</desktop><follow>no</follow></action></keybind>
+		<keybind key="7"><action name="SendToDesktop"><desktop>7</desktop><follow>no</follow></action></keybind>
+		<keybind key="8"><action name="SendToDesktop"><desktop>8</desktop><follow>no</follow></action></keybind>
+		<keybind key="9"><action name="SendToDesktop"><desktop>9</desktop><follow>no</follow></action></keybind>
+		<keybind key="o"><action name="ToggleOmnipresent"/></keybind>
+	</keybind>
+
     <keybind key="W-F10">
       <action name="ToggleDecorations"/>
       <action name="ToggleMaximize">
