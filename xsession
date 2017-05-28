@@ -66,7 +66,7 @@ if [ "${HOST}" = 'spof' ];then
 	xscreensaver -nosplash &
 	~/dotfiles/bin/xclock.sh
 	xset b off
-	setxkbmap -layout us,fi -option grp:caps_toggle
+	~/dotfiles/bin/Xkeyboard.sh
 fi
 
 if [ "${HOST}" = 'tempof' ];then
@@ -75,7 +75,7 @@ if [ "${HOST}" = 'tempof' ];then
 	xscreensaver -nosplash &
 	~/dotfiles/bin/xclock.sh
 	xset b off
-	setxkbmap -layout fi
+	~/dotfiles/bin/Xkeyboard.sh
 fi
 
 if [ "${HOST}" = 'ljb' ];then
@@ -84,8 +84,8 @@ if [ "${HOST}" = 'ljb' ];then
 	xsetroot -solid gray &
 	xscreensaver -nosplash &
 	xset b off
+	~/dotfiles/bin/Xkeyboard.sh
 	xfce4-panel &
-	setxkbmap fi
 fi
 
 if [ "${HOST}" = 'tiptop' ];then
@@ -93,6 +93,7 @@ if [ "${HOST}" = 'tiptop' ];then
 	xscreensaver -nosplash &
 	xset b off
 	~/dotfiles/bin/xclock.sh
+	~/dotfiles/bin/Xkeyboard.sh
 fi
 echo ${SSHAGENTRC} > ~/.ssh-agent.sh
 eval ${SSHAGENTRC}

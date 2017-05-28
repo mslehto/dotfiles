@@ -16,12 +16,22 @@
 			<action name="Execute">
 				<command>setxkbmap us</command>
 			</action>
-  		</item>
+		</item>
 		<item label="setxkbmap fi">
 			<action name="Execute">
 				<command>setxkbmap fi</command>
 			</action>
-  		</item>
+		</item>
+		<item label="Xkeyboard.sh">
+			<action name="Execute">
+				<command>~/dotfiles/bin/Xkeyboard.sh</command>
+			</action>
+		</item>
+		<item label="xmodmap Xmodmap.reset*">
+			<action name="Execute">
+				<command>xmodmap ~/dotfiles/Xmodmap.resetescape ~/dotfiles/Xmodmap.resetcapslock</command>
+			</action>
+		</item>
 
 		<item label="muttprint.ps">
 			<action name="Execute">

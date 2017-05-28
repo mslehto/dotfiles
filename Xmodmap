@@ -1,0 +1,62 @@
+! xmodmap accepts the following input expressions:
+! 
+!     pointer = default              reset pointer buttons to default
+!     pointer = NUMBER ...           set pointer button codes
+!     keycode NUMBER = [KEYSYM ...]  map keycode to given keysyms
+!     keysym KEYSYM = [KEYSYM ...]   look up keysym and do a keycode operation
+!     clear MODIFIER                 remove all keys for this modifier
+!     add MODIFIER = KEYSYM ...      add the keysyms to the modifier
+!     remove MODIFIER = KEYSYM ...   remove the keysyms from the modifier
+! 
+! where NUMBER is a decimal, octal, or hex constant; KEYSYM is a valid
+! Key Symbol name; and MODIFIER is one of the eight modifier names:  Shift,
+! Lock, Control, Mod1, Mod2, Mod3, Mod4, or Mod5.  Lines beginning with
+! an exclamation mark (!) are taken as comments.  Case is significant except
+! for MODIFIER names.
+! 
+! Keysyms on the left hand side of the = sign are looked up before any changes
+! are made; keysyms on the right are looked up after all of those on the left
+! have been resolved.  This makes it possible to swap modifier keys.
+
+!Standard KeySym names are obtained from <X11/keysymdef.h> by removing the XK_ prefix from each name: XK_cent -> cent
+
+! XStringToKeysym() and XKeysymToString() functions will also handle
+! any keysym string of the form "U0020" to "U007E" and "U00A0" to   
+! "U10FFFF" for all possible Unicode characters. In other words,   
+! every possible Unicode character has already a keysym string      
+! defined algorithmically, even if it is not listed here keysymdef.h
+
+! xmodmap -pke
+! xmodmap -pk
+
+!keycode  14 = 5 percent 5 percent permille leftdoublequotemark
+!                        5 Shift+5 Alt-Gr+5 Alt-Gr+Shift+5
+!                        5 %       ‰        “
+
+!YEN
+!keycode  26 = e E e E EuroSign
+!keycode  26 = e E e E EuroSign yen currency
+keysym e = e E e E EuroSign yen
+
+! U+2665 BLACK HEART SUIT
+!keycode  49 = section onehalf grave asciitilde dead_stroke
+keysym section = section onehalf grave asciitilde U2665
+
+! U+2642 MALE SIGN
+! U+2640 FEMALE SIGN
+!keycode  24 = q Q q Q q Q
+keycode  24 = q Q NoSymbol NoSymbol malesymbol femalesymbol 
+
+! U+221E INFINITY
+!keycode  17 = 8 parenleft 8 asterisk bracketleft less
+keysym 8 = 8 parenleft 8 asterisk bracketleft infinity
+
+! U+2260 NOT EQUAL TO
+!keycode  19 = 0 equal 0 parenright braceright degree
+!keysym 0 = 0 equal 0 parenright braceright degree
+keysym 0 = 0 equal 0 parenright braceright notequal
+
+! U+00AC NOT SIGN
+!keycode 103 = End NoSymbol End
+keysym End = End notsign
+
