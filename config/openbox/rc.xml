@@ -173,7 +173,7 @@
 		</action>
 	</keybind>
 
-	<keybind key="W-S-0x2f"> <!-- keycode 47==0x2f==Ö(fi) ;(en) -->
+	<keybind key="W-S-l">
 		<action name="UnmaximizeFull"/>
 		<action name="MoveResizeTo">
 			<x>-1</x>
@@ -206,7 +206,7 @@
 			<right>-5</right>
 		</action>
 	</keybind>
-	<keybind key="W-S-A-0x2f"> <!-- keycode 47==0x2f==Ö(fi) ;(en) -->
+	<keybind key="W-S-A-l">
 		<action name="ResizeRelative">
 			<left>-5</left>
 		</action>
@@ -221,7 +221,6 @@
 			<top>-5</top>
 		</action>
 	</keybind>
-
 
     <keybind key="W-F10">
       <action name="ToggleDecorations"/>
