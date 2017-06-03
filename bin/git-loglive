@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# https://gist.github.com/tlberglund/3714970
+
+while :
+do
+    clear
+    git --no-pager log --graph --pretty=oneline --abbrev-commit --decorate --all $*
+    sleep 1
+done
+
+# shows the logs depending on the position of HEAD
+#git --no-pager log `git rev-parse HEAD` -n $* --graph --pretty=oneline --abbrev-commit --decorat
