@@ -29,11 +29,12 @@ else
 
 	"highlight NonText ctermfg=White
 	"highlight SpecialKey ctermfg=White
-	highlight SpecialKey ctermfg=Magenta
-	highlight NonText ctermfg=Magenta
+	highlight SpecialKey ctermfg=darkgrey
+	highlight NonText ctermfg=magenta
 	highlight Visual ctermfg=Magenta
 endif
 
 set nolist
 set laststatus=2
 set showtabline=2
+
