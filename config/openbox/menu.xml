@@ -12,6 +12,12 @@
 			</action>
   		</item>
 
+		<item label="tmux show-buffer|xclip">
+			<action name="Execute">
+				<command>tmux show-buffer|xclip -i selection primary</command>
+			</action>
+		</item>
+
 		<item label="setxkbmap us">
 			<action name="Execute">
 				<command>setxkbmap us</command>
