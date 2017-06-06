@@ -10,5 +10,6 @@
 	logf = log -p -M --follow --stat --
 	difs = diff --staged
 	stat = status -bs
+	lg = log --all --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%ae>(%ce)%Creset' --abbrev-commit --
 [push]
 	default = simple
