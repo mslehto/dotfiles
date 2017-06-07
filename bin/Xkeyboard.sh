@@ -1,4 +1,4 @@
 #!/bin/sh
 setxkbmap -option
-setxkbmap -layout fi,us -option grp:alt_caps_toggle
+setxkbmap -layout fi,us -option grp:shifts_toggle -option grp_led:scroll -option caps:swapescape
 xmodmap ~/dotfiles/Xmodmap
