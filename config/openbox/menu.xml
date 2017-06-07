@@ -207,7 +207,7 @@ pc-mixer
 			</action>
 		</item>
 
-		<item label="xscreensaver-command -lock">
+		<item label="xscreensaver-command -_lock">
 			<action name="Execute">
 				<command>/usr/local/bin/xscreensaver-command -l</command>
 			</action>
