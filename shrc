@@ -1,0 +1,12 @@
+set -o vi
+
+alias h='fc -l'
+ 
+# be paranoid
+alias cp='cp -ip'
+alias mv='mv -i'
+alias rm='rm -i'
+alias vi='vim'
+
+. ~/.ssh-agent.sh > /dev/null
+
