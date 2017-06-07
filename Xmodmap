@@ -45,7 +45,7 @@ keysym section = section onehalf grave asciitilde U2665
 ! U+2642 MALE SIGN
 ! U+2640 FEMALE SIGN
 !keycode  24 = q Q q Q q Q
-keycode  24 = q Q NoSymbol NoSymbol malesymbol femalesymbol 
+!keycode  24 = q Q NoSymbol NoSymbol malesymbol femalesymbol
 
 ! U+221E INFINITY
 !keycode  17 = 8 parenleft 8 asterisk bracketleft less
