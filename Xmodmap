@@ -58,5 +58,5 @@ keysym 0 = 0 equal 0 parenright braceright notequal
 
 ! U+00AC NOT SIGN
 !keycode 103 = End NoSymbol End
-keysym End = End notsign
+!keysym End = End notsign
 
