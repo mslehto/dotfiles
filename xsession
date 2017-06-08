@@ -80,7 +80,6 @@ fi
 
 if [ "${HOST}" = 'ljb' ];then
 	SSHAGENTRC="$(ssh-agent -c)"
-	show-pceol
 	xsetroot -solid gray &
 	xscreensaver -nosplash &
 	xset b off
