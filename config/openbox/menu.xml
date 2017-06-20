@@ -172,9 +172,9 @@ pc-mixer
 			</action>
 		</item>
 		<separator/>
-		<item label="xscreensaver-command -quit">
+		<item label="xscreensaver-command -exit">
 			<action name="Execute">
-				<command>/usr/local/bin/xscreensaver-command -quit</command>
+				<command>/usr/local/bin/xscreensaver-command -exit</command>
 			</action>
 		</item>
 		<item label="xscreensaver">
