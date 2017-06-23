@@ -1,10 +1,5 @@
 <openbox_menu>
 	<menu id="root-menu" label="labeli">
-		<item label="xterm.sh">
-			<action name="Execute">
-				<command>~/dotfiles/bin/xterm.sh</command>
-			</action>
-  		</item>
 
 		<item label="xterm">
 			<action name="Execute">
