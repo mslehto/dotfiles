@@ -292,6 +292,26 @@
 			<to>5</to>
 			</action>
 		</keybind>
+		<keybind key="F6">
+			<action name="GoToDesktop">
+			<to>6</to>
+			</action>
+		</keybind>
+		<keybind key="F7">
+			<action name="GoToDesktop">
+			<to>7</to>
+			</action>
+		</keybind>
+		<keybind key="F8">
+			<action name="GoToDesktop">
+			<to>8</to>
+			</action>
+		</keybind>
+		<keybind key="F9">
+			<action name="GoToDesktop">
+			<to>9</to>
+			</action>
+		</keybind>
 	</keybind>
 
     <keybind key="W-F10">
