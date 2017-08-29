@@ -10,6 +10,7 @@ imap <C-K> <c-o>:pyf /usr/local/llvm39/share/clang/clang-format.py<cr>
 " http://www.alexeyshmalko.com/2014/using-vim-as-c-cpp-ide/
 " ! mark prevents Vim from jumping to location of first error found
 nnoremap <F4> :make!<cr>
+nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 set makeprg=gmake
 
 if has('gui_running')
