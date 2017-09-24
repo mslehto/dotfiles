@@ -6,6 +6,8 @@
 	co = checkout
 	logd = log --decorate
 	logg = log --decorate --graph --all
+	loga = log --decorate --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%Creset %s %Cgreen(%cr) %C(bold blue)%cn <%ce> %C(reset)¿%C(red)%an (%ae)%Creset?' --
+	logt = log --color --graph --pretty=format:'%Cred%h%Creset %C(yellow)%cn %cI%Creset %C(bold blue)%an %aI %C(reset) %s %C(red)%d%C(reset)' --
 	lol = log --graph --decorate --pretty=oneline --abbrev-commit --all
 	logf = log -p -M --follow --stat --
 	difs = diff --staged
