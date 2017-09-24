@@ -141,7 +141,7 @@ pc-mixer
 
 		<item label="radmin">
 			<action name="Execute">
-				<command>~/bin/radmin</command>
+				<command>~/bin/radmin.sh</command>
 			</action>
 		</item>
 
