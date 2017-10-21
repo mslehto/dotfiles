@@ -60,7 +60,12 @@
 			<action name="Execute">
 				<command>firefox</command>
 			</action>
-  		</item>
+		</item>
+		<item label="chrome">
+			<action name="Execute">
+				<command>chrome</command>
+			</action>
+		</item>
 
 		<item label="tb">
 			<action name="Execute">
