@@ -63,7 +63,7 @@ if &diff
 endif
 
 set statusline=
-set statusline+=%t                               "tail of the filename
+set statusline+=%F                               "full path to the file in the buffer
 set statusline+=[%{strlen(&fenc)?&fenc:'none'},  "file encoding
 set statusline+=%{&ff}]                          "file format
 set statusline+=%h                               "help file flag
