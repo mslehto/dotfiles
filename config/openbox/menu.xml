@@ -56,7 +56,7 @@
 				<command>tuxpaint</command>
 			</action>
 		</item>
-		<item label="ff">
+		<item label="_ff">
 			<action name="Execute">
 				<command>firefox</command>
 			</action>
