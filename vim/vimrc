@@ -3,6 +3,11 @@ set tabstop=4
 set hls
 set colorcolumn=80
 set encoding=utf-8
+set ruler
+set nonu
+
+let branchname = system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+let branch = strlen(branchname) > 0?' |'.branchname.'| ':' '
 
 map <C-K> :pyf /usr/local/llvm39/share/clang/clang-format.py<cr>
 imap <C-K> <c-o>:pyf /usr/local/llvm39/share/clang/clang-format.py<cr>
@@ -55,3 +60,21 @@ if &diff
 	highlight DiffChange cterm=none ctermfg=fg ctermbg=Blue gui=none guifg=fg guibg=Blue
 	highlight DiffText cterm=none ctermfg=bg ctermbg=White gui=none guifg=bg guibg=White
 endif
+
+set statusline=
+set statusline+=%t                               "tail of the filename
+set statusline+=[%{strlen(&fenc)?&fenc:'none'},  "file encoding
+set statusline+=%{&ff}]                          "file format
+set statusline+=%h                               "help file flag
+set statusline+=%m                               "modified flag
+set statusline+=%r                               "read only flag
+set statusline+=%w                               "preview window flag
+set statusline+=%y                               "filetype
+set statusline+=%{branch}                        "git branch of cwd when vim loaded
+set statusline+=%l(%L):%c(%v%V)\ %o\             "line:column
+set statusline+=%b,0x%-8B\                       "current char in decimal and hexadecimal
+set statusline+=%=                               "left/right separator
+set statusline+=buf%n\ \                         "buffer number
+set statusline+=%c,                              "cursor column
+set statusline+=%l/%L                            "cursor line/total lines
+set statusline+=\ %P                             "percent through file
