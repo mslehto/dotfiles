@@ -103,15 +103,15 @@
     <number>9</number>
     <firstdesk>1</firstdesk>
     <names>
-      <name>üksi</name>
-      <name>vika</name>
-      <name>develol</name>
-      <name>doc</name>
-      <name>troot</name>
-      <name>UNI</name>
-      <name>NNI</name>
-      <name>IP</name>
-      <name>jotain</name>
+      <name>maanantai1</name>
+      <name>tiistai2</name>
+      <name>keskiviikko3</name>
+      <name>torstai4</name>
+      <name>random5</name>
+      <name>xNI6</name>
+      <name>prov</name>
+      <name>IP8</name>
+      <name>jotain9</name>
     </names>
     <popupTime>1875</popupTime>
     <!-- The number of milliseconds to show the popup for when switching
