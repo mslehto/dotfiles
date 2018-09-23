@@ -1,0 +1,9 @@
+set -g set-remain-on-exit on
+
+set -g mode-keys vi
+set -g status-keys vi
+
+set -g clock-mode-style 24
+
+bind-key "i" copy-mode
+bind-key "I" paste-buffer
