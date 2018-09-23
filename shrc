@@ -8,6 +8,5 @@ alias mv='mv -i'
 alias rm='rm -i'
 alias vi='vim'
 
-#. ~/.ssh-agent.sh > /dev/null # -> .sshrc
-
-. .sshrc
+~/bin/ssh-agent.sh > /dev/null
+. ~/.sshrc

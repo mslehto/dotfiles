@@ -61,7 +61,6 @@ fi
 if [ "${HOST}" = 'spof' ];then
 	show-pceol
 	askXrandr
-	SSHAGENTRC="$(ssh-agent -c)"
 	xsetroot -solid gray &
 	xscreensaver -nosplash &
 	~/dotfiles/bin/xclock.sh
@@ -69,8 +68,7 @@ if [ "${HOST}" = 'spof' ];then
 	~/dotfiles/bin/Xkeyboard.sh
 fi
 
-if [ "${HOST}" = 'tempof' ];then
-	SSHAGENTRC="$(ssh-agent -s)"
+if [ "${HOST}" = 'tempo' ];then
 	xsetroot -solid black &
 	xscreensaver -nosplash &
 	~/dotfiles/bin/xclock.sh
@@ -79,7 +77,6 @@ if [ "${HOST}" = 'tempof' ];then
 fi
 
 if [ "${HOST}" = 'ljb' ];then
-	SSHAGENTRC="$(ssh-agent -c)"
 	xsetroot -solid gray &
 	xscreensaver -nosplash &
 	xset b off
@@ -94,8 +91,9 @@ if [ "${HOST}" = 'tiptop' ];then
 	~/dotfiles/bin/xclock.sh
 	~/dotfiles/bin/Xkeyboard.sh
 fi
-echo ${SSHAGENTRC} > ~/.ssh-agent.sh
-eval ${SSHAGENTRC}
+
+~/bin/ssh-agent.sh
+. ~/.sshrc
 
 openbox
 
