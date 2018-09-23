@@ -1,12 +1,22 @@
 set -o vi
 
 alias h='fc -l'
- 
+
+EDITOR=vim;   	export EDITOR
+PAGER=less;  	export PAGER
+
 # be paranoid
 alias cp='cp -ip'
 alias mv='mv -i'
 alias rm='rm -i'
 alias vi='vim'
 
-~/bin/ssh-agent.sh > /dev/null
-. ~/.sshrc
+
+if [ -x ~/bin/ssh-agent.sh ]
+then
+  ~/bin/ssh-agent.sh > /dev/null
+fi
+if [ -x ~/.sshrc ]
+then
+  . ~/.sshrc
+fi
