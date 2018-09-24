@@ -1,4 +1,5 @@
 LC_CTYPE=en_GB.UTF-8; export LC_CTYPE
+LANG=en_GB.UTF-8; export LANG
 EDITOR=vim;   	export EDITOR
 PAGER=less;  	export PAGER
 
