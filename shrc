@@ -16,7 +16,7 @@ if [ -x ~/bin/ssh-agent.sh ]
 then
   ~/bin/ssh-agent.sh > /dev/null
 fi
-if [ -x ~/.sshrc ]
+if [ -f ~/.sshrc ]
 then
   . ~/.sshrc
 fi
