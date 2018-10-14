@@ -19,6 +19,11 @@ nnoremap <F4> :make!<cr>
 nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 set makeprg=gmake
 
+map <silent> <C-h> :call functions#WinMove('h')<cr>
+map <silent> <C-j> :call functions#WinMove('j')<cr>
+map <silent> <C-k> :call functions#WinMove('k')<cr>
+map <silent> <C-l> :call functions#WinMove('l')<cr>
+
 if has('gui_running')
 	set list listchars=tab:>-,nbsp:.,trail:.,extends:>,precedes:<,eol:\|
 	let &showbreak = '^'
