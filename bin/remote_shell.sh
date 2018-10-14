@@ -7,7 +7,7 @@ sftpcmd ()
 {
 	src=$1
 	dst=$2
-	echo "ls -lnf $dst"
+	#echo "ls -lnf $dst"
 	#echo "rm $dst"
 	echo "put $src $dst"
 }
