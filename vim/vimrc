@@ -19,6 +19,13 @@ nnoremap <F4> :make!<cr>
 nnoremap <silent> <F5> :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 set makeprg=gmake
 
+let mapleader = ','
+nmap <silent> <leader>gs :Gstatus<cr>
+nmap <silent> <leader>gd :Gvdiff<cr>
+nmap <leader>ge :Gedit<cr>
+nmap <silent><leader>gr :Gread<cr>
+nmap <silent><leader>gb :Gblame<cr>
+
 map <silent> <C-h> :call functions#WinMove('h')<cr>
 map <silent> <C-j> :call functions#WinMove('j')<cr>
 map <silent> <C-k> :call functions#WinMove('k')<cr>
